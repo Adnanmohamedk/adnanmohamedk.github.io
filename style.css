@@ -23,15 +23,15 @@
 :root{
     --bgrnd1: #d8d8d8;
     --bgrnd2: #FFFFFF;
-    --body-color: #E4E9F7;
+    --body-color: #FFF8E7;
     --nav-color: #4070F4;
     --side-nav: #010718;
     --text-color: #FFF;
     --search-bar: #F2F2F2;
     --search-text: #010718;
     --btn-text: #1a1a1a;
-    --logo-color: #fff;
-    --sec-nav-color:#8ba7f1;
+    --logo-color: #FFF;
+    --sec-nav-color:#8BA7F1;
 }
 
 body{
