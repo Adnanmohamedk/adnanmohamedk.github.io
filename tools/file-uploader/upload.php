@@ -1,19 +1,18 @@
 <?php
-$uploadDirectory = "files/"; // Directory to save uploaded files
+if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_FILES['file'])) {
+    $file = $_FILES['file'];
 
-if ($_SERVER["REQUEST_METHOD"] === "POST" && isset($_FILES["file"])) {
-    $file = $_FILES["file"];
+    if ($file['error'] === 0 && strpos($file['type'], 'image/') === 0) {
+        $uploadDir = 'files/';
+        $uploadPath = $uploadDir . basename($file['name']);
 
-    if ($file["error"] === UPLOAD_ERR_OK) {
-        $targetPath = $uploadDirectory . basename($file["name"]);
-
-        if (move_uploaded_file($file["tmp_name"], $targetPath)) {
-            echo json_encode(["success" => true, "fileURL" => $targetPath]);
+        if (move_uploaded_file($file['tmp_name'], $uploadPath)) {
+            echo 'File uploaded successfully.';
         } else {
-            echo json_encode(["success" => false]);
+            echo 'Error uploading file.';
         }
     } else {
-        echo json_encode(["success" => false]);
+        echo 'Invalid file format.';
     }
 }
 ?>
