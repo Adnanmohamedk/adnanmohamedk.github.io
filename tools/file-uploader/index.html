@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>File Upload and Download</title>
+</head>
+<body>
+    <div class="wrapper">
+        <form id="file-upload-form" enctype="multipart/form-data">
+            <input type="file" id="file-input" name="file" accept="image/*" required>
+        </form>
+        <div class="preview">
+            <img id="image-preview" alt="Image Preview">
+        </div>
+        <button id="upload-button">Upload</button>
+        <a id="download-link" download>Download</a>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
