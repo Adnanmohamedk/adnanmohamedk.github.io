@@ -1,41 +1,62 @@
-document.addEventListener("DOMContentLoaded", function () {
-    const fileInput = document.getElementById("file-input");
-    const imagePreview = document.getElementById("image-preview");
-    const uploadButton = document.getElementById("upload-button");
-    const downloadLink = document.getElementById("download-link");
+const fileInput = document.getElementById('file-input');
+const previewBox = document.getElementById('preview-box');
+const previewImage = document.getElementById('preview-image');
+const downloadButton = document.getElementById('download-button');
 
-    fileInput.addEventListener("change", function () {
-        const file = fileInput.files[0];
-        if (file && file.type.startsWith("image/")) {
+fileInput.addEventListener('change', function () {
+    const file = fileInput.files[0];
+
+    if (file) {
+        if (file.type.startsWith('image/')) {
             const reader = new FileReader();
             reader.onload = function (e) {
-                imagePreview.src = e.target.result;
-                imagePreview.style.display = "block";
+                previewImage.src = e.target.result;
+                previewBox.style.display = 'block';
+                downloadButton.disabled = false;
             };
             reader.readAsDataURL(file);
         }
-    });
+    }
+});
 
-    uploadButton.addEventListener("click", function () {
-        const file = fileInput.files[0];
-        if (file) {
-            const formData = new FormData();
-            formData.append("file", file);
+fileInput.addEventListener('dragover', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+});
 
-            fetch("upload.php", {
-                method: "POST",
-                body: formData,
-            })
-                .then(response => response.json())
-                .then(data => {
-                    if (data.success) {
-                        downloadLink.href = data.fileURL;
-                        downloadLink.style.display = "block";
-                        alert("File uploaded successfully!");
-                    } else {
-                        alert("File upload failed!");
-                    }
-                });
+fileInput.addEventListener('dragenter', function () {
+    previewBox.style.border = '2px dashed #0073e6';
+});
+
+fileInput.addEventListener('dragleave', function () {
+    previewBox.style.border = '2px dashed #999';
+});
+
+fileInput.addEventListener('drop', function (e) {
+    e.preventDefault();
+    e.stopPropagation();
+    previewBox.style.border = '2px dashed #999';
+
+    const file = e.dataTransfer.files[0];
+
+    if (file) {
+        fileInput.files = e.dataTransfer.files;
+
+        if (file.type.startsWith('image/')) {
+            const reader = new FileReader();
+            reader.onload = function (e) {
+                previewImage.src = e.target.result;
+                previewBox.style.display = 'block';
+                downloadButton.disabled = false;
+            };
+            reader.readAsDataURL(file);
         }
-    });
+    }
+});
+
+downloadButton.addEventListener('click', function () {
+    const downloadLink = document.createElement('a');
+    downloadLink.href = previewImage.src;
+    downloadLink.download = 'uploaded_image.jpg';
+    downloadLink.click();
 });
