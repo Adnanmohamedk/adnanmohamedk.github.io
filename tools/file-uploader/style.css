@@ -1,0 +1,14 @@
+.wrapper {
+    text-align: center;
+    margin: 20px;
+}
+
+.preview {
+    display: none;
+    margin: 20px;
+}
+
+img {
+    max-width: 100%;
+    max-height: 300px;
+}
