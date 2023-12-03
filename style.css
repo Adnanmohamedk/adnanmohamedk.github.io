@@ -22,7 +22,6 @@
 /* ===== Colours ===== */
 :root{
     --bgrnd1: #d8d8d8;
-    --bgrnd2: #FFFFFF;
     --body-color: #FFF8E7;
     --nav-color: #4070F4;
     --side-nav: #010718;
@@ -30,33 +29,36 @@
     --search-bar: #F2F2F2;
     --search-text: #010718;
     --btn-text: #1a1a1a;
-    --logo-color: #FFF;
+    --logo-color: #fff;
     --sec-nav-color:#8BA7F1;
-}
-
-body{
-    min-height: 100vh;
-    background-color: var(--body-color);
-    cursor: default;
-}
-
-#content {
-    font-size: 125%;
-    color: var(--btn-text);
+    --highlight: #a3a3a3;
 }
 
 body.dark{
     --bgrnd1: #242526;
-    --bgrnd2: #222222;
     --body-color: #18191A;
     --nav-color: #242526;
     --side-nav: #242526;
     --text-color: #CCC;
     --search-bar: #242526;
     --btn-text:#fff;
-    --logo-color: rgba(125,105,350,1);
+    --logo-color: rgba(125,105,350,0.8);
     --sec-nav-color:#555;
+    --highlight: rgba(125,105,350,0.8);
 }
+
+body{
+  min-height: 100vh;
+  background-color: var(--body-color);
+  cursor: default;
+}
+
+.content{
+  padding-top: 2%;
+  font-size: 125%;
+  color: var(--btn-text);
+}
+
 
 .container {
     padding: 15px 0 0 0;
@@ -397,6 +399,7 @@ body.dark .search-field i{
     margin-top: 70px;
     font-size:55px;
     color: var(--text-color);
+    opacity: 1;
   }
   
   #showcase p{
@@ -410,16 +413,15 @@ body.dark .search-field i{
   }
 
   #showcase u{
-    color: white;
+    color: var(--logo-color);
     text-decoration: none;
-    opacity: 0.9;
+    opacity: 1;
   }
 
-  /*Hover glowing button*/
   .link-btn {
     border-radius: 60px;
     padding: 16px 32px;
-    background-color: var(--bgrnd2);
+    background-color: var(--bgrnd1);
     text-decoration: none;
     color: var(--btn-text);
     margin-bottom: 5%;
@@ -429,10 +431,6 @@ body.dark .search-field i{
     padding: 16px 0;
     border: 2px solid white;
     text-decoration: none;
-    opacity: 0.85;
-  }
-
-  .glow:hover {
     opacity: 1;
   }
 
@@ -492,9 +490,6 @@ body.dark .search-field i{
     width: 100%;
   }
 
-  #content{
-    padding-top: 2%;
-  }
 
  #topgames {
     display: flex;
