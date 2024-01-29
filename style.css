@@ -57,11 +57,11 @@ body{
   padding-top: 2%;
   font-size: 125%;
   color: var(--btn-text);
-  align-items:center;
+  text-align: center;
 }
 
 .content p,h4{
-  text-align:left;
+  text-align: left;
 }
 
 
