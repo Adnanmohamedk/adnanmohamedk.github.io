@@ -60,7 +60,7 @@ body{
   align-items:center;
 }
 
-.content p{
+.content p,h4{
   text-align:left;
 }
 
