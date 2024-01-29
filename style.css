@@ -58,6 +58,7 @@ body{
   font-size: 125%;
   color: var(--btn-text);
   margin-top:70px;
+  align-items:center;
 }
 
 .content p{
