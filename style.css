@@ -87,6 +87,11 @@ body{
     font-weight: bolder;
 }
 
+.game-tool .flex {
+  justify-content: center;
+  padding-top: 60px;
+}
+
 .flex {
     max-width: 100%;
     width: fit-content;
@@ -444,19 +449,21 @@ body.dark .search-field i{
   }
   
   .cntr{
+    aspect-ratio: 1/1;
     position: relative;
     margin: 30px 30px;
     padding: 16px;
     border: solid 1px var(--btn-text);
     border-radius: 2em;
-    min-width: 180px;
+    min-width: 150px;
     max-width: max-content;
-    min-height: 120px;
+    min-height: 150px;
     max-height: max-content;
     color: var(--btn-text);
   }
 
   .cntr #p {
+    align-self: flex-end;
     text-align: center;
   }
 
@@ -526,18 +533,20 @@ body.dark .search-field i{
   /* Track */
   ::-webkit-scrollbar-track {
     background: #c5c5c5;
-    opacity: 0; 
+    opacity: 0;
   }
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
     background: var(--nav-color);
     border-radius: 30px;
+    opacity: 0.75;
   }
   
   /* Handle on hover */
   ::-webkit-scrollbar-thumb:hover {
     background: var(--sec-nav-color);
+    opacity: 0.5;
   }
 
   /* Scrollbar end */
@@ -561,6 +570,7 @@ body.dark .search-field i{
     color: #fff;
     font-size: 1.2rem;
     font-weight: 400;
+    text-align: center;
   }
   
   .footer-col .links {
