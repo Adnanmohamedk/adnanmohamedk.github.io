@@ -1,108 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Adnan Mohamed K - Portfolio</title>
-  <link rel="stylesheet" href="styles.css">
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan Mohamed K - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
+    <!-- Navigation Bar -->
+    <nav id="navbar">
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
     </nav>
-  </header>
-  
-  <section id="about">
-    <h1>Adnan Mohamed K</h1>
-    <p>Head Boy at Amal English School and aspiring B.Tech student in AI & ML or Robotics and Automation.</p>
-  </section>
-  
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skill-icon">
-      <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M4 12l6 6 10-12" stroke="#4caf50" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div class="skill">
-      <h3>Programming</h3>
-      <div class="skill-bar" data-skill="80"></div>
-    </div>
-    <div class="skill">
-      <h3>Research</h3>
-      <div class="skill-bar" data-skill="90"></div>
-    </div>
-    <div class="skill">
-      <h3>Leadership</h3>
-      <div class="skill-bar" data-skill="85"></div>
-    </div>
-  </section>
-  
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="skill-icon">
-      <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M6 6h12v12H6V6z" stroke="#ff4081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      <path d="M6 6l6 6 6-6" stroke="#ff4081" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div class="project">
-      <h3>Project 1</h3>
-      <p>Description of your project here.</p>
-      <a href="#">View Project</a>
-    </div>
-    <!-- Add more projects here -->
-  </section>
-  
-  <section id="experience">
-    <h2>Experience</h2>
-    <div class="skill-icon">
-      <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 6v12M6 12h12" stroke="#2196f3" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div class="experience">
-      <h3>Head Boy</h3>
-      <p>Amal English School</p>
-      <p>Responsibilities and achievements as Head Boy.</p>
-    </div>
-    <!-- Add more experience here -->
-  </section>
-  
-  <section id="education">
-    <h2>Education</h2>
-    <div class="skill-icon">
-      <svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2L2 7l10 5 10-5-10-5zM12 12v9" stroke="#f44336" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-      </svg>
-    </div>
-    <div class="education">
-      <h3>Amal English School</h3>
-      <p>Grade: +2 A</p>
-      <p>Expected Graduation Year: [Year]</p>
-    </div>
-    <!-- Add more education details here -->
-  </section>
-  
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: adnanmohdk1234@gmail.com</p>
-    <p>Phone: +91 9446234360</p>
-  </section>
-  
-  <footer>
-    <p>&copy; 2024 Adnan Mohamed K</p>
-  </footer>
-  
-  <script src="scripts.js"></script>
+
+    <!-- Hero Section -->
+    <header id="hero">
+        <div class="hero-content">
+            <h1>Adnan Mohamed K</h1>
+            <p>Head Boy at Amal English School and aspiring B.Tech student in AI & ML or Robotics and Automation.</p>
+            <a href="#contact" class="cta-btn">Contact Me</a>
+        </div>
+    </header>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skill-container">
+            <div class="skill">
+                <h3>Programming</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 85%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Research</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 75%;"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3>Leadership</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" style="width: 90%;"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <img src="project1-thumbnail.jpg" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Description of your project here.</p>
+                <a href="#" class="project-link">View Project</a>
+            </div>
+            <!-- Additional projects can go here -->
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+        <h2>Experience</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Head Boy</h3>
+                <p>Amal English School - Managed and led student activities and represented the student body in various functions.</p>
+            </div>
+            <!-- Additional experience can go here -->
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <h2>Education</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <h3>Amal English School</h3>
+                <p>Grade: +2 A | Expected Graduation Year: 2024</p>
+            </div>
+            <!-- Additional education can go here -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Adnan Mohamed K</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>
