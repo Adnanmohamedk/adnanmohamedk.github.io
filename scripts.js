@@ -24,3 +24,11 @@ document.getElementById('contact-form').addEventListener('submit', function(e) {
     alert("Message sent successfully!");
     this.reset();
 });
+
+// Hamburger Menu Toggle
+const hamburger = document.querySelector('.hamburger');
+const navLinks = document.querySelector('nav ul');
+
+hamburger.addEventListener('click', () => {
+    navLinks.classList.toggle('show');
+});
