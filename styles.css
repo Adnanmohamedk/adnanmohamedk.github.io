@@ -5,6 +5,61 @@
     box-sizing: border-box;
 }
 
+    .hamburger {
+        display: flex;
+        position: absolute;
+        right: 20px;
+        top: 15px;
+    }
+
+    /* Responsive Hero Section */
+    #hero {
+        height: auto;
+        padding: 100px 20px;
+    }
+
+    #hero h1 {
+        font-size: 2.5rem;
+    }
+
+    #hero p {
+        font-size: 1.2rem;
+    }
+
+    .cta-btn {
+        padding: 8px 15px;
+    }
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    background: linear-gradient(to right, #6A0572, #A940C2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+#hero h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+#hero p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-btn {
+    padding: 10px 20px;
+    background-color: #fff;
+    color: #333;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
