@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adnan Mohamed K | Code Bug Hunter & Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Adnan Mohamed K, a tech-obsessed code bug hunter and high school graduate specializing in finding solutions.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;700&family=Space+Mono:wght@400;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body class="loading">
+
+    <!-- Loading Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <h1 class="glitch" data-text="Adnan Mohamed K">Adnan Mohamed K</h1>
+            <div class="progress-bar">
+                <div class="progress"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Floating Navigation -->
+    <nav class="floating-nav">
+        <div class="nav-links">
+            <a href="#hero" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#services">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="parallax-container">
+            <div class="hero-content" data-tilt>
+                <h2 class="hero-subtitle">Hello, I'm</h2>
+                <h1 class="hero-title">Adnan Mohamed K</h1>
+                <p class="hero-description">Tech-obsessed Code Bug Hunter. <br>Tweaking every line of code to
+                    perfection.</p>
+                <div class="hero-cta">
+                    <a href="#projects" class="btn primary">View Work</a>
+                    <a href="#contact" class="btn secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-background-elements">
+                <div class="floating-shape shape-1"></div>
+                <div class="floating-shape shape-2"></div>
+                <div class="floating-shape shape-3"></div>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="section reveal">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>I'm a tech-obsessed high school graduate who finds joy in the wonders of code. I call myself a
+                        "Code Bug Hunter" because I thrive on solving complex issues and helping fellow coders.</p>
+                    <p>While I may not have a wall full of certificates, my portfolio of projects and my history of
+                        helping the developer community speaks for itself. I explore everything from low-level logic to
+                        high-end web interactions.</p>
+                </div>
+                <div class="social-links">
+                    <a href="https://linkedin.com" target="_blank" class="social-item">LinkedIn</a>
+                    <a href="https://instagram.com" target="_blank" class="social-item">Instagram</a>
+                    <a href="https://reddit.com" target="_blank" class="social-item">Reddit</a>
+                    <a href="https://discord.com" target="_blank" class="social-item">Discord</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="section reveal">
+            <h2 class="section-title">Skills & Expertise</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML5 & CSS3</li>
+                        <li>JavaScript (ES6+)</li>
+                        <li>Responsive Design</li>
+                        <li>Animations (CSS/JS)</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Backend & Tools</h3>
+                    <ul>
+                        <li>Python</li>
+                        <li>Git & GitHub</li>
+                        <li>Debugging Tools</li>
+                        <li>Performance Optimization</li>
+                    </ul>
+                </div>
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <ul>
+                        <li>Problem Solving</li>
+                        <li>Community Support</li>
+                        <li>Bug Hunting</li>
+                        <li>Technical Research</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="section reveal">
+            <h2 class="section-title">Selected Projects</h2>
+            <div class="project-grid">
+                <!-- Project 1 -->
+                <div class="project-card" style="--delay: 1">
+                    <div class="project-image">
+                        <img src="assets/project1.png" alt="High-End Portfolio"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>High-End Portfolio</h3>
+                        <p>A GPU-accelerated, dark-themed portfolio website featuring 3D parallax effects.</p>
+                        <div class="tags">
+                            <span>HTML</span><span>CSS</span><span>JS</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="project-card" style="--delay: 2">
+                    <div class="project-image">
+                        <img src="assets/project2.png" alt="Bug Tracker"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Bug Tracker CLI</h3>
+                        <p>A custom command-line tool for tracking and managing code bugs efficiently.</p>
+                        <div class="tags">
+                            <span>Python</span><span>CLI</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="project-card" style="--delay: 3">
+                    <div class="project-image">
+                        <img src="assets/project3.png" alt="Community Helper Bot"
+                            style="width: 100%; height: 100%; object-fit: cover;">
+                    </div>
+                    <div class="project-info">
+                        <h3>Community Helper Bot</h3>
+                        <p>A Discord bot designed to assist fellow coders with common debugging tasks.</p>
+                        <div class="tags">
+                            <span>Node.js</span><span>Discord.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Services -->
+        <section id="services" class="section reveal">
+            <h2 class="section-title">Services</h2>
+            <div class="services-list">
+                <div class="service-item">
+                    <h3>Code Debugging</h3>
+                    <p>Expert assistance in identifying and crushing bugs in your key projects.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Performance Tuning</h3>
+                    <p>Optimizing code for maximum speed and efficiency.</p>
+                </div>
+                <div class="service-item">
+                    <h3>Web Development</h3>
+                    <p>Building high-quality, responsive websites with a focus on user experience.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="section reveal">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <p>Have a project in mind or need help squashing a bug? Reach out!</p>
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Adnan Mohamed K. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
