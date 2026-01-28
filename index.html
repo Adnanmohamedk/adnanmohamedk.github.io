@@ -233,17 +233,20 @@
             <h2 class="section-title">Get In Touch</h2>
             <div class="contact-container">
                 <p>Have a project in mind or need help squashing a bug? Reach out!</p>
-                <form id="contact-form">
+                <!-- REPLACE 'YOUR_ACCESS_KEY' with your actual key from Web3Forms.com -->
+                <form id="contact-form" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="f2d684ff-e9c0-4d61-9594-bf8e35aa93d8">
                     <div class="form-group">
-                        <input type="text" placeholder="Name" required>
+                        <input type="text" name="name" placeholder="Name" required>
                     </div>
                     <div class="form-group">
-                        <input type="email" placeholder="Email" required>
+                        <input type="email" name="email" placeholder="Email" required>
                     </div>
                     <div class="form-group">
-                        <textarea placeholder="Message" rows="5" required></textarea>
+                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn primary">Send Message</button>
+                    <button type="submit" class="btn primary" id="form-submit">Send Message</button>
+                    <div id="form-status" class="form-status"></div>
                 </form>
             </div>
         </section>
